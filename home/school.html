@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body style="background-color: rgb(109, 112, 112);;">
+
+
+    <!-- School navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark text-bg-dark fs-4 sticky-top">
+        <div class="container ">
+            <a class="navbar-brand fs-3" href="#">OTRS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu  dropdown-menu-dark fs-4">
+                            <li><a class="dropdown-item" href="#">Available Teachers</a></li>
+                            <li><a class="dropdown-item" href="#">Manage Posted Jobs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Add New Job</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Appplicants & Notifications</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">chat</a>
+                    </li>
+
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">profile</a>
+                        <ul class="dropdown-menu  dropdown-menu-dark fs-4">
+                            <li><a class="dropdown-item" href="#">Create Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Update Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- School searching section -->
+    <div class="section bg-secondary">
+        <div class="container mt-0 pt-5 pb-4 ">
+
+            <h1 class="mb-4">Looking for a Teacher. Get The Best teacher at Any Location</h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <select class="form-select mb-3">
+                        <!-- selecting county -->
+                        <option selected class="text-black">Select County</option>
+                        <option value="county1">Mombasa</option>
+                        <option value="county2">Kwale</option>
+                        <option value="county3">Kilifi</option>
+                        <option value="county4">Tana River</option>
+                        <option value="county5">Lamu</option>
+                        <option value="county6">Taita Taveta</option>
+                        <option value="county7">Garissa</option>
+                        <option value="county8">Wajir</option>
+                        <option value="county9">Mandera</option>
+                        <option value="county10">Marsabit</option>
+                        <option value="county11">Isiolo</option>
+                        <option value="county12">Meru</option>
+                        <option value="county13">Tharaka Nithi</option>
+                        <option value="county14">Embu</option>
+                        <option value="county15">Kitui</option>
+                        <option value="county16">Machakos</option>
+                        <option value="county17">Makueni</option>
+                        <option value="county18">Nyandarua</option>
+                        <option value="county19">Nyeri</option>
+                        <option value="county20">Kirinyaga</option>
+                        <option value="county21">Murang'a</option>
+                        <option value="county22">Kiambu</option>
+                        <option value="county23">Turkana</option>
+                        <option value="county24">West Pokot</option>
+                        <option value="county25">Samburu</option>
+                        <option value="county26">Trans-Nzoia</option>
+                        <option value="county27">Uasin-Gishu</option>
+                        <option value="county28">Elgeiyo-Marakwet</option>
+                        <option value="county29">Nandi</option>
+                        <option value="county30">baringo</option>
+                        <option value="county31">Laikipia</option>
+                        <option value="county32">Nakuru</option>
+                        <option value="county33">Narok</option>
+                        <option value="county34">Kajiado</option>
+                        <option value="county35">Kericho</option>
+                        <option value="county36">Bomet</option>
+                        <option value="county37">Kakamega</option>
+                        <option value="county38">Vihiga</option>
+                        <option value="county39">Bungoma</option>
+                        <option value="county40">Busia</option>
+                        <option value="county41">Siaya</option>
+                        <option value="county42">Kisumu</option>
+                        <option value="county43">Homa Bay</option>
+                        <option value="county44">Migori</option>
+                        <option value="county45">Kisii</option>
+                        <option value="county46">Nyamira</option>
+                        <option value="county47">Nairobi</option>
+
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select mb-3" aria-label="Select Subject">
+                        <option selected>Select Subject</option>
+                        <!-- selecting subject -->
+                        <option value="subject1">Mathematics</option>
+                        <option value="subject2">English</option>
+                        <option value="subject3">Kiswahili</option>
+                        <option value="subject4">Physics</option>
+                        <option value="subject5">Chemistry</option>
+                        <option value="subject6">Biology</option>
+                        <option value="subject7">History & Government</option>
+                        <option value="subject8">Geography</option>
+                        <option value="subject9">Christian Religion</option>
+                        <option value="subject10">Islamic Religion</option>
+                        <option value="subject11">Hindu Religion</option>
+                        <option value="subject12">Computer Studies</option>
+                        <option value="subject13">Agriculture</option>
+                        <option value="subject14">Art & Design</option>
+                        <option value="subject15">Home Science</option>
+                        <option value="subject16">Business Studies</option>
+                        <option value="subject17">Music</option>
+                        <option value="subject18">French</option>
+                        <option value="subject19">Germany</option>
+                        <option value="subject19">Arabic</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-primary btn-block ">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Available Teachers in a card-->
+    <div class="container mt-5">
+        <div class="card px-5">
+            <h1 class="my-4 text-center">Available Teachers</h1>
+            <div class="row">
+                <div class="col-md-4 my-3">
+                    <div class="card bg-body-secondary text-black">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="card-title">Name: Alexander-Anorld</h5>
+                                    <h5 class="card-title">Email: anorld@gmail.com</h5>
+                                    <h5 class="card-title">Phone: 0703156845</h5>
+                                    <h5 class="card-title">Subject: Mathematics</h5>
+                                    <h5 class="card-title">ID Number: 123456</h5>
+                                    <h5 class="card-title">DOB: 30/12/1998</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/arnold.jpeg" class="card-img-top" alt="Profile Image">
+                                    <h5 class="card-title mt-5">From: Nairobi county</h5>
+                                    <div class="card-btn btn-lg text-center mt-5">
+                                        <a href="#"><button type="submit" class="text-bg-success rounded-2 btn">Message
+                                                the
+                                                teacher</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card bg-body-secondary text-black">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="card-title">Name: Alexander-Anorld</h5>
+                                    <h5 class="card-title">Email: anorld@gmail.com</h5>
+                                    <h5 class="card-title">Phone: 0703156845</h5>
+                                    <h5 class="card-title">Subject: Mathematics</h5>
+                                    <h5 class="card-title">ID Number: 123456</h5>
+                                    <h5 class="card-title">DOB: 30/12/1998</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/arnold.jpeg" class="card-img-top" alt="Profile Image">
+                                    <h5 class="card-title mt-5">From: Nairobi county</h5>
+                                    <div class="card-btn btn-lg text-center mt-5">
+                                        <a href="#"><button type="submit" class="text-bg-success rounded-2 btn">Message
+                                                the
+                                                teacher</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card bg-body-secondary text-black">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="card-title">Name: Alexander-Anorld</h5>
+                                    <h5 class="card-title">Email: anorld@gmail.com</h5>
+                                    <h5 class="card-title">Phone: 0703156845</h5>
+                                    <h5 class="card-title">Subject: Mathematics</h5>
+                                    <h5 class="card-title">ID Number: 123456</h5>
+                                    <h5 class="card-title">DOB: 30/12/1998</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/arnold.jpeg" class="card-img-top" alt="Profile Image">
+                                    <h5 class="card-title mt-5">From: Nairobi county</h5>
+                                    <div class="card-btn btn-lg text-center mt-5">
+                                        <a href="#"><button type="submit" class="text-bg-success rounded-2 btn">Message
+                                                the
+                                                teacher</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card bg-body-secondary text-black">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="card-title">Name: Alexander-Anorld</h5>
+                                    <h5 class="card-title">Email: anorld@gmail.com</h5>
+                                    <h5 class="card-title">Phone: 0703156845</h5>
+                                    <h5 class="card-title">Subject: Mathematics</h5>
+                                    <h5 class="card-title">ID Number: 123456</h5>
+                                    <h5 class="card-title">DOB: 30/12/1998</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/arnold.jpeg" class="card-img-top" alt="Profile Image">
+                                    <h5 class="card-title mt-5">From: Nairobi county</h5>
+                                    <div class="card-btn btn-lg text-center mt-5">
+                                        <a href="#"><button type="submit" class="text-bg-success rounded-2 btn">Message
+                                                the
+                                                teacher</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card bg-body-secondary text-black">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="card-title">Name: Alexander-Anorld</h5>
+                                    <h5 class="card-title">Email: anorld@gmail.com</h5>
+                                    <h5 class="card-title">Phone: 0703156845</h5>
+                                    <h5 class="card-title">Subject: Mathematics</h5>
+                                    <h5 class="card-title">ID Number: 123456</h5>
+                                    <h5 class="card-title">DOB: 30/12/1998</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/arnold.jpeg" class="card-img-top" alt="Profile Image">
+                                    <h5 class="card-title mt-5">From: Nairobi county</h5>
+                                    <div class="card-btn btn-lg text-center mt-5">
+                                        <a href="#"><button type="submit" class="text-bg-success rounded-2 btn">Message
+                                                the
+                                                teacher</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card bg-body-secondary text-black">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="card-title">Name: Alexander-Anorld</h5>
+                                    <h5 class="card-title">Email: anorld@gmail.com</h5>
+                                    <h5 class="card-title">Phone: 0703156845</h5>
+                                    <h5 class="card-title">Subject: Mathematics</h5>
+                                    <h5 class="card-title">ID Number: 123456</h5>
+                                    <h5 class="card-title">DOB: 30/12/1998</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/arnold.jpeg" class="card-img-top" alt="Profile Image">
+                                    <h5 class="card-title mt-5">From Nairobi county</h5>
+                                    <div class="card-btn btn-lg text-center mt-5">
+                                        <a href="#"><button type="submit" class="text-bg-success rounded-2 btn">Message
+                                                the
+                                                teacher</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card bg-body-secondary text-black">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="card-title">Name: Alexander-Anorld</h5>
+                                    <h5 class="card-title">Email: anorld@gmail.com</h5>
+                                    <h5 class="card-title">Phone: 0703156845</h5>
+                                    <h5 class="card-title">Subject: Mathematics</h5>
+                                    <h5 class="card-title">ID Number: 123456</h5>
+                                    <h5 class="card-title">DOB: 30/12/1998</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/arnold.jpeg" class="card-img-top" alt="Profile Image">
+                                    <h5 class="card-title mt-5">From Nairobi county</h5>
+                                    <div class="card-btn btn-lg text-center mt-5">
+                                        <a href="#"><button type="submit" class="text-bg-success rounded-2 btn">Message
+                                                the
+                                                teacher</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card bg-body-secondary text-black">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="card-title">Name: Alexander-Anorld</h5>
+                                    <h5 class="card-title">Email: anorld@gmail.com</h5>
+                                    <h5 class="card-title">Phone: 0703156845</h5>
+                                    <h5 class="card-title">Subject: Mathematics</h5>
+                                    <h5 class="card-title">ID Number: 123456</h5>
+                                    <h5 class="card-title">DOB: 30/12/1998</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/arnold.jpeg" class="card-img-top" alt="Profile Image">
+                                    <h5 class="card-title mt-5">From Nairobi county</h5>
+                                    <div class="card-btn btn-lg text-center mt-5">
+                                        <a href="#"><button type="submit" class="text-bg-success rounded-2 btn">Message
+                                                the
+                                                teacher</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="card bg-body-secondary text-black">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="card-title">Name: Alexander-Anorld</h5>
+                                    <h5 class="card-title">Email: anorld@gmail.com</h5>
+                                    <h5 class="card-title">Phone: 0703156845</h5>
+                                    <h5 class="card-title">Subject: Mathematics</h5>
+                                    <h5 class="card-title">ID Number: 123456</h5>
+                                    <h5 class="card-title">DOB: 30/12/1998</h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/arnold.jpeg" class="card-img-top" alt="Profile Image">
+                                    <h5 class="card-title mt-5">From Nairobi county</h5>
+                                    <div class="card-btn btn-lg text-center mt-5">
+                                        <a href="#"><button type="submit" class="text-bg-success rounded-2 btn">Message
+                                                the
+                                                teacher</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="my-5">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- View teacher & About the teacher-->
+    <div class="container">
+        <div class="card my-5">
+            <div class="card-body">
+                <div class="card-header m-0">
+                    <h1>Teachers Name : {{ teacher.fname }} {{ teacher.lname }}</h1>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card-text">
+                            <h5 class="card-title">Email: {{ teacher.email }}</h5><br>
+                            <h5 class="card-title">Phone: {{ teacher.phonenumber }}</h5><br>
+                            <h5 class="card-title">Subject: {{ teacher.subject }}</h5><br>
+                            <h5 class="card-title">ID Number: {{ teacher.idnumber }}</h5><br>
+                            <h5 class="card-title">DOB: {{ teacher.dob }}</h5><br>
+                            <h5 class="card-title">Gender: {{ teacher.get_gender_display }}</h5><br>
+                            <h5 class="card-title">County: From {{ teacher.location }} county</h5><br>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/arnold.jpeg" class="card-img-top" alt="Profile Image">
+                    </div>
+                </div>
+                <div class="card-text">
+                    <h2>Other Description</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus voluptatum nulla quod
+                        blanditiis tempora, voluptate asperiores sequi vitae corporis eaque adipisci debitis veniam
+                        rerum doloribus dolore fugit nesciunt beatae temporibus quam! Recusandae, eos porro saepe vel
+                        illo animi aliquam repudiandae cupiditate laborum obcaecati tenetur sint iusto labore omnis
+                        optio neque ea ut accusantium, iure ipsum soluta aspernatur dolorem quae? Molestiae soluta ipsum
+                        culpa nobis quisquam ullam, ex expedita adipisci qui? Ipsa dolorum itaque impedit suscipit sint
+                        consectetur, dolore ex, ea quaerat a eligendi alias dicta magni facere, nostrum sunt accusamus
+                        officiis eos vitae corrupti repudiandae delectus molestiae earum rerum! Cum laudantium labore
+                        totam ipsum. Quis consequuntur quisquam id optio accusantium voluptatum magni, itaque molestiae
+                        ipsam deserunt eos facilis praesentium beatae sed! Neque, consectetur assumenda commodi, veniam
+                        vitae officiis molestiae dolor explicabo quos, repellat quidem. Officiis eius, similique tenetur
+                        cumque ad saepe repellat placeat veritatis. Quibusdam rem eligendi dolore exercitationem soluta
+                        iure. Cupiditate deserunt earum doloribus deleniti quo similique itaque harum accusantium,
+                        nobis, dolores iusto odit ad veritatis tempora excepturi id molestiae. Ab praesentium, est
+                        delectus maxime sint, quod expedita perferendis veniam iusto odit sequi obcaecati dolores esse,
+                        quia provident repudiandae. Perferendis repudiandae quia incidunt laborum tempore accusamus
+                        voluptatem, cum voluptas.</p>
+                </div>
+                <div class="card-text mb-5">
+                    <h5><a href="#">Download their Resume</a></h5>
+                </div>
+                <div class="card-footer">
+                    <div class="card-btn text-center">
+                        <button class="btn btn-primary btn-lg ">Message the teacher</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add a new job -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card my-3 pt-2 bg-body-secondary">
+                    <div class="card-body ">
+                        <form action="" method="">
+                            <div>
+                                <h3 class="text-center">Adding a New Job</h3>
+                            </div>
+
+
+                            <div class="my-3">
+                                <input type="text" name="subject" id="subject" placeholder="Enter the subject"
+                                    class="form-control">
+                            </div>
+                            <div class="my-3">
+                                <input type="text" name="countyname" id="schoolname"
+                                    placeholder="Enter school's location(County)" class="form-control">
+                            </div>
+                            <div class="my-3">
+                                <input type="number" name="salary" id="Salary" placeholder="Enter salary for the job"
+                                    class="form-control">
+                            </div>
+                            <div class="my-3">
+                                <input type="text" name="jobid" id="jobid" placeholder="Enter Job id"
+                                    class="form-control">
+                            </div>
+                            <!-- <div class="my-3">
+                                <select class="form-select mb-3">
+                                    <option selected>Type of School</option>
+                                    <option value="school1">National School</option>
+                                    <option value="school2">Regional School</option>
+                                    <option value="school3">Extra-County School</option>
+                                    <option value="school4">County School</option>
+                                    <option value="school5">Sub-County School</option>
+                                </select>
+                            </div> -->
+                            <div class="my-3">
+                                <textarea name="description" id="description" cols="30" rows="10" class="form-control"
+                                    placeholder="Describe the subject"></textarea>
+                            </div>
+                            <div class="my-3">
+                                <textarea name="qualifications" id="qualifications" cols="30" rows="10"
+                                    class="form-control"
+                                    placeholder="Give the required qualifications for the job"></textarea>
+                            </div>
+
+                            <!-- <div class="my-3">
+                                <input type="number" name="idnumber" id="idnumber" placeholder="Enter your id number"
+                                    class="form-control">
+                            </div> -->
+
+                            <div class="container text-center my-3">
+                                <button class="btn btn-primary ">Add Job</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Manage posted jobs in a card -->
+    <div class="container">
+        <div class="card px-sm-4 my-5 pb-3">
+            <div>
+                <h1 class="text-center mt-3">Manage Posted Jobs</h1>
+            </div>
+            <table class="table table-bordered bg-body-secondary ">
+                <thead>
+                    <tr class="bg-primary">
+                        <th>Subject</th>
+                        <th>Location</th>
+                        <th>Salary</th>
+                        <th>View Job</th>
+                        <th>update Job</th>
+                        <th>Status</th>
+                        <th>Delete Job</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>Kitui County</td>
+                        <th>50000</th>
+                        <th><a href="#">View job</a></th>
+                        <th><a href="#">Update job</a></th>
+                        <td><button class="btn btn-success btn-sm">Active</button>
+                        <td><button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>Kitui County</td>
+                        <th>50000</th>
+                        <th><a href="#">View job</a></th>
+                        <th><a href="#">Update job</a></th>
+                        <td><button class="btn btn-success btn-sm">Active</button>
+                        <td><button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>Kitui County</td>
+                        <th>50000</th>
+                        <th><a href="#">View job</a></th>
+                        <th><a href="#">Update job</a></th>
+                        <td><button class="btn btn-success btn-sm">Active</button>
+                        <td><button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>Kitui County</td>
+                        <th>50000</th>
+                        <th><a href="#">View job</a></th>
+                        <th><a href="#">Update job</a></th>
+                        <td><button class="btn btn-success btn-sm">Active</button>
+                        <td><button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>Kitui County</td>
+                        <th>50000</th>
+                        <th><a href="#">View job</a></th>
+                        <th><a href="#">Update job</a></th>
+                        <td><button class="btn btn-success btn-sm">Active</button>
+                        <td><button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>Kitui County</td>
+                        <th>50000</th>
+                        <th><a href="#">View job</a></th>
+                        <th><a href="#">Update job</a></th>
+                        <td><button class="btn btn-success btn-sm">Active</button>
+                        <td><button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>Kitui County</td>
+                        <th>50000</th>
+                        <th><a href="#">View job</a></th>
+                        <th><a href="#">Update job</a></th>
+                        <td><button class="btn btn-success btn-sm">Active</button>
+                        <td><button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>Kitui County</td>
+                        <th>50000</th>
+                        <th><a href="#">View job</a></th>
+                        <th><a href="#">Update job</a></th>
+                        <td><button class="btn btn-success btn-sm">Active</button>
+                        <td><button class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+            <!-- <div class="container text-center my-3">
+                <button class="btn btn-primary ">Print Applicants</button>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- View posted job details -->
+    <div class="container">
+        <div class="card my-5">
+            <div class="card-body">
+                <div class="card-header m-0">
+                    <h1>Job Details: Subject Mathematics(view posted job)</h1>
+                </div>
+                <br>
+                <div class="card-text">
+                    <h2>Job Description</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores blanditiis id commodi
+                        sequi assumenda voluptatem eveniet mollitia dolorum libero voluptate, quis perspiciatis
+                        consequuntur? Ipsum quibusdam beatae quis voluptatum iure expedita rem laudantium architecto ea,
+                        illo tenetur velit voluptatem, dicta fuga? Esse dicta temporibus, incidunt quia earum enim
+                        assumenda aut hic nulla et blanditiis ratione nemo laborum. Beatae non magni possimus. Neque non
+                        tempore quod enim ipsam saepe asperiores officiis facilis quia, rerum est repellat distinctio
+                        dignissimos aliquid sapiente aliquam incidunt quae libero cupiditate, deserunt et rem! Incidunt
+                        illo quae molestias iste earum facere, sed nostrum aut ipsam consequuntur perferendis.</p>
+                </div>
+                <div class="card-text">
+                    <h2>Job Requirements</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus voluptatum nulla quod
+                        blanditiis tempora, voluptate asperiores sequi vitae corporis eaque adipisci debitis veniam
+                        rerum doloribus dolore fugit nesciunt beatae temporibus quam! Recusandae, eos porro saepe vel
+                        illo animi aliquam repudiandae cupiditate laborum obcaecati tenetur sint iusto labore omnis
+                        optio neque ea ut accusantium, iure ipsum soluta aspernatur dolorem quae? Molestiae soluta ipsum
+                        culpa nobis quisquam ullam, ex expedita adipisci qui? Ipsa dolorum itaque impedit suscipit sint
+                        consectetur, dolore ex, ea quaerat a eligendi alias dicta magni facere, nostrum sunt accusamus
+                        officiis eos vitae corrupti repudiandae delectus molestiae earum rerum! Cum laudantium labore
+                        totam ipsum. Quis consequuntur quisquam id optio accusantium voluptatum magni, itaque molestiae
+                        ipsam deserunt eos facilis praesentium beatae sed! Neque, consectetur assumenda commodi, veniam
+                        vitae officiis molestiae dolor explicabo quos, repellat quidem. Officiis eius, similique tenetur
+                        cumque ad saepe repellat placeat veritatis. Quibusdam rem eligendi dolore exercitationem soluta
+                        iure. Cupiditate deserunt earum doloribus deleniti quo similique itaque harum accusantium,
+                        nobis, dolores iusto odit ad veritatis tempora excepturi id molestiae. Ab praesentium, est
+                        delectus maxime sint, quod expedita perferendis veniam iusto odit sequi obcaecati dolores esse,
+                        quia provident repudiandae. Perferendis repudiandae quia incidunt laborum tempore accusamus
+                        voluptatem, cum voluptas.</p>
+                </div>
+                <div class="card-text">
+                    <!-- pull the data abot school from the school profile -->
+                    <h2>About The School</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laudantium vel error iusto
+                        laboriosam cupiditate ex omnis labore magnam facilis numquam rem corrupti, veritatis quisquam
+                        voluptatum totam nesciunt. Laudantium vel quia ex excepturi laboriosam totam officiis optio
+                        quaerat, cupiditate sequi adipisci sit velit perspiciatis facere harum maiores fugiat in
+                        necessitatibus.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-btn text-center">
+                        <button class="btn btn-primary btn-lg ">Update Job</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Update posted job -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card my-3 pt-2 bg-body-secondary">
+                    <div class="card-body ">
+                        <form action="" method="">
+                            <div>
+                                <h3 class="text-center">Updating Posted Job</h3>
+                            </div>
+
+
+                            <div class="my-3">
+                                <input type="text" name="subject" id="subject" placeholder="Enter the subject"
+                                    class="form-control">
+                            </div>
+                            <div class="my-3">
+                                <input type="text" name="countyname" id="schoolname"
+                                    placeholder="Enter school's location(County)" class="form-control">
+                            </div>
+                            <div class="my-3">
+                                <input type="number" name="salary" id="Salary" placeholder="Enter salary for the job"
+                                    class="form-control">
+                            </div>
+                            <div class="my-3">
+                                <input type="text" name="jobid" id="jobid" placeholder="Enter Job id"
+                                    class="form-control">
+                            </div>
+                            <!-- <div class="my-3">
+                                <select class="form-select mb-3">
+                                    <option selected>Type of School</option>
+                                    <option value="school1">National School</option>
+                                    <option value="school2">Regional School</option>
+                                    <option value="school3">Extra-County School</option>
+                                    <option value="school4">County School</option>
+                                    <option value="school5">Sub-County School</option>
+                                </select>
+                            </div> -->
+                            <div class="my-3">
+                                <textarea name="description" id="description" cols="30" rows="10" class="form-control"
+                                    placeholder="Describe the subject"></textarea>
+                            </div>
+                            <div class="my-3">
+                                <textarea name="qualifications" id="qualifications" cols="30" rows="10"
+                                    class="form-control"
+                                    placeholder="Give the required qualifications for the job"></textarea>
+                            </div>
+
+                            <!-- <div class="my-3">
+                                <input type="number" name="idnumber" id="idnumber" placeholder="Enter your id number"
+                                    class="form-control">
+                            </div> -->
+
+                            <div class="container text-center my-3">
+                                <button class="btn btn-primary ">Update Job</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Notifications and Displaying applied Jobs -->
+    <div class="container mt-5">
+        <div class="card p-3">
+            <div class="row">
+                <!-- Notifications table -->
+                <div class="col-md-5">
+                    <div>
+                        <h1 class="text-center">Notifications</h1>
+                    </div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            Notifications
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-body-secondary">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">New Teacher</h5>
+                                <small>18 hours ago</small>
+                            </div>
+                            <p class="mb-1"> A physics teacher has Signed in. Check Them out!!.</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-body-secondary">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">New message</h5>
+                                <small>5 mins ago</small>
+                            </div>
+                            <p class="mb-1">Victor Kyalo has sent you a message</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-body-secondary">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">New job posted by PQR school</h5>
+                                <small>18 hours ago</small>
+                            </div>
+                            <p class="mb-1">They require a Physics teacher. Check it out!!.</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-body-secondary">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">New message from PQR school</h5>
+                                <small>2 hours ago</small>
+                            </div>
+                            <p class="mb-1">Wa have seen your resume and we would wish to have face to face......</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Applied Jobs -->
+                <div class="col-md-7">
+                    <div>
+                        <h1 class="text-center">Applicants for all subjects</h1>
+                    </div>
+                    <table class="table table-bordered bg-body-secondary ">
+                        <thead>
+                            <tr class="bg-primary">
+                                <th>Subject</th>
+                                <th>County</th>
+                                <th>School</th>
+                                <th>No. of Applicants</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>Mombasa</td>
+                                <td>ABC School</td>
+                                <th>2 <a href="#">View All</a></th>
+                                <td><a href="#">View Job</a></td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>Mombasa</td>
+                                <td>ABC School</td>
+                                <th>11 <a href="#">View All</a></th>
+                                <td><a href="#">View Job</a></td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>Mombasa</td>
+                                <td>ABC School</td>
+                                <th>8 <a href="#">View All</a></th>
+                                <td><a href="#">View Job</a></td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>Mombasa</td>
+                                <td>ABC School</td>
+                                <th>5 <a href="#">View All</a></th>
+                                <td><a href="#">View Job</a></td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>Mombasa</td>
+                                <td>ABC School</td>
+                                <th>10 <a href="#">View All</a></th>
+                                <td><a href="#">View Job</a></td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>Mombasa</td>
+                                <td>ABC School</td>
+                                <th>1 <a href="#">View All</a></th>
+                                <td><a href="#">View Job</a></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- View all Applicants -->
+    <div class="container">
+        <div class="card px-4 my-5">
+            <div>
+                <h1 class="text-center">All applicants for Mathematics (view all applicants)</h1>
+            </div>
+            <table class="table table-bordered bg-body-secondary ">
+                <thead>
+                    <tr class="bg-primary">
+                        <th>Name</th>
+                        <th>Phonenumber</th>
+                        <th>Id number</th>
+                        <th>Application Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lionel Messi</td>
+                        <td>0712345678</td>
+                        <th>9876509</th>
+                        <th>30/4/2023</th>
+                        <td><a href="#">Download Resume</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lionel Messi</td>
+                        <td>0712345678</td>
+                        <th>9876509</th>
+                        <th>30/4/2023</th>
+                        <td><a href="#">Download Resume</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lionel Messi</td>
+                        <td>0712345678</td>
+                        <th>9876509</th>
+                        <th>30/4/2023</th>
+                        <td><a href="#">Download Resume</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lionel Messi</td>
+                        <td>0712345678</td>
+                        <th>9876509</th>
+                        <th>30/4/2023</th>
+                        <td><a href="#">Download Resume</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lionel Messi</td>
+                        <td>0712345678</td>
+                        <th>9876509</th>
+                        <th>30/4/2023</th>
+                        <td><a href="#">Download Resume</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lionel Messi</td>
+                        <td>0712345678</td>
+                        <th>9876509</th>
+                        <th>30/4/2023</th>
+                        <td><a href="#">Download Resume</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lionel Messi</td>
+                        <td>0712345678</td>
+                        <th>9876509</th>
+                        <th>30/4/2023</th>
+                        <td><a href="#">Download Resume</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="container text-center my-3">
+                <button class="btn btn-primary ">Print Applicants</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- chat and Messanges-->
+    <div class="container">
+        <div class="card px-4 my-2 bg-body-secondary">
+            <h1 class="my-2 text-center ">Chat & Messages</h1>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="list-group mt-4">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                            Conversations
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-body-secondary">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-1">Lionel Messi</h6>
+                                <small>2:30 pm</small>
+                            </div>
+                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-body-secondary">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-1">Lionel Messi</h6>
+                                <small>1:15 pm</small>
+                            </div>
+                            <p class="mb-1">Pellentesque euismod odio quis consectetur auctor.</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-body-secondary">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-1">Lionel Messi</h6>
+                                <small>5:55 pm</small>
+                            </div>
+                            <p class="mb-1">Pellentesque euismod odio quis consectetur auctor.</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-body-secondary">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-1">Lionel Messi</h6>
+                                <small>4:35 pm</small>
+                            </div>
+                            <p class="mb-1">Pellentesque euismod odio quis consectetur auctor.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card bg-body-secondary mt-4">
+                        <div class="card-header bg-primary">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">Lionel Messi</h5>
+                                <button type="button" class="btn btn-link"><i class="bi bi-telephone-fill"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="chat-message">
+                                <div class="chat-message-left">
+                                    <div class="chat-bubble">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <small>2:30 pm</small>
+                                    </div>
+                                </div>
+                                <div class="chat-message-right">
+                                    <div class="chat-bubble">
+                                        <p>Nullam porttitor odio vitae sem ullamcorper, eget suscipit enim bibendum.</p>
+                                        <small>2:31 pm</small>
+                                    </div>
+                                </div>
+                                <div class="chat-message-left">
+                                    <div class="chat-bubble">
+                                        <p>Morbi eu orci in est consequat euismod non ac sapien.</p>
+                                        <small>2:35 pm</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Type your message...">
+                                    <button type="submit" class="btn btn-primary"><i
+                                            class="bi bi-arrow-right">Send</i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create profile for the school -->
+    <div class="container ">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card my-3 pt-2 bg-body-secondary">
+                    <div class="card-body ">
+                        <form action="" method="">
+                            <div>
+                                <h3 class="text-center">Creating profile for the school</h3>
+                            </div>
+                            <div class="my-3">
+                                <input type="text" name="schoolname" id="schoolname" placeholder="Enter the schoolname"
+                                    class="form-control">
+                            </div>
+                            <div class="my-3">
+                                <input type="email" name="schoolemail" id="schoolemail"
+                                    placeholder="Enter the school email" class="form-control">
+                            </div>
+
+                            <div class="my-3">
+                                <input type="text" name="countyname" id="schoolname"
+                                    placeholder="Enter school's location(County)" class="form-control">
+                            </div>
+                            <div class="my-3">
+                                <select class="form-select mb-3">
+                                    <option selected>Type of School</option>
+                                    <option value="school1">National School</option>
+                                    <option value="school2">Regional School</option>
+                                    <option value="school3">Extra-County School</option>
+                                    <option value="school4">County School</option>
+                                    <option value="school5">Sub-County School</option>
+                                </select>
+                            </div>
+                            <div class="my-3">
+                                <textarea name="description" id="description" cols="30" rows="10" class="form-control"
+                                    placeholder="Description for the school"></textarea>
+                            </div>
+                            <div class="container text-center my-3">
+                                <button class="btn btn-primary ">Create Profile</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Updatie profile for the school -->
+    <div class="container ">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card my-3 pt-2 bg-body-secondary">
+                    <div class="card-body ">
+                        <form action="" method="">
+                            <div>
+                                <h3 class="text-center">Updating profile for the school</h3>
+                            </div>
+                            <div class="my-3">
+                                <input type="text" name="schoolname" id="schoolname" placeholder="Enter the schoolname"
+                                    class="form-control">
+                            </div>
+                            <div class="my-3">
+                                <input type="email" name="schoolemail" id="schoolemail"
+                                    placeholder="Enter the school email" class="form-control">
+                            </div>
+
+                            <div class="my-3">
+                                <input type="text" name="countyname" id="schoolname"
+                                    placeholder="Enter school's location(County)" class="form-control">
+                            </div>
+                            <div class="my-3">
+                                <select class="form-select mb-3">
+                                    <option selected>Type of School</option>
+                                    <option value="school1">National School</option>
+                                    <option value="school2">Regional School</option>
+                                    <option value="school3">Extra-County School</option>
+                                    <option value="school4">County School</option>
+                                    <option value="school5">Sub-County School</option>
+                                </select>
+                            </div>
+                            <div class="my-3">
+                                <textarea name="description" id="description" cols="30" rows="10" class="form-control"
+                                    placeholder="Description for the school"></textarea>
+                            </div>
+                            <div class="container text-center my-3">
+                                <button class="btn btn-primary ">Update Profile</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- School footer -->
+    <footer class="footer bg-dark text-light mt-1 py-4 mt-auto ">
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 fs-3">
+                <h3 class="text-decoration-underline">Social Media</h3>
+                <div class="row">
+                    <a href="#"><i class="bi bi-instagram"></i><br></a>
+                </div>
+                <div class="row">
+                    <li class="list-inline-item"> <a href="#"><i class="bi bi-facebook"></i><br></a></li>
+                </div>
+                <div class="row">
+                    <a href="#"><i class="bi bi-twitter"></i><br></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-decoration-underline">About Us</h3>
+                <p>Recruitment platform where teachers can find their preffered teaching job and schools can find their
+                    ideal
+                    teacher for a particular subject. We offer the best services for both upcoming teachers and schools.
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-decoration-underline">Contact Us</h3>
+                <p>Nairobi,<br>Kenya<br>Phone: <a href="tel:+254703156845">(+254) 703-156-845</a><br>Email: <a
+                        href="mailto:vchalloh@gmail.com">vchalloh@gmail.com</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-decoration-underline">Copyright</h3>
+                <h6><a href="#" class="text-decoration-none">Copyright policy</a></h6>
+                <h6><a href="#" class="text-decoration-none">Terms and conditions</a></h6>
+                </a></h6>
+                <p>&copy; 2023 OTRS. All Rights Reserved.</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
